@@ -1,12 +1,12 @@
 import React from 'react'
-import { navItems } from '../constants'
+import { navLinks } from '../constants'
 const NavBar = () => {
   return (
     <header>
       <nav>
         <img src="public/logo.svg" alt="" />
         <ul>
-            {navItems.map((item)=>(
+            {navLinks.map((item)=>(
                 <li key={item.label}><a href={item.label}>{item.label}</a></li>
             ))}
         </ul>
